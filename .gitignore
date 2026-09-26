@@ -1,0 +1,22 @@
+# Virtual environment -- never commit this. It's a local copy of the
+# Python interpreter plus installed packages, tied to your OS/machine.
+# requirements.txt is what gets committed instead; venv/ gets recreated
+# fresh on every machine from it.
+venv/
+.venv/
+
+# Python bytecode caches
+__pycache__/
+*.pyc
+
+# Snapshot images produced by the scripts
+/*.jpeg
+*.jpg
+
+# Local environment/secrets, if you ever add a .env file for credentials
+.env
+/myconfig.yaml
+
+# Training models, they download when necessary
+*.pt
+runs/
